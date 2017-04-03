@@ -8,21 +8,49 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 body {
   background-color: white;
-  width: 75%;
-  margin: auto;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: top;
   font-family: Baskerville, Georgia, serif;
-  border: 10px solid white;
-
 }
 
-h1 {
-  font-size: 2em;
+#mainTitle {
+  background: linear-gradient( rgba(112, 81, 116,.75), rgba(112, 81, 116,.75) ),url(../resources/images/background/arch-purple.jpg) no-repeat fixed top center;
+    
+  background-size:cover;
+  height: 100%;
+  width: 100%;
+  height: 100vh;
+  width: 100vw;
+    
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+#mainTitle div h1 {
+  font-size: 5em;
   font-weight: normal;
   text-align: center;
-  background-color: darkgrey;
   margin: auto;
   color: white;
-  padding: 1em;
+  padding-bottom: .25em;
+}
+
+#mainTitle p {
+  text-align: center;
+}
+
+#mainTitle a {
+  border-top: 1px solid black;
+  color: white;
+  text-decoration: none;
+  padding: 0 2em;
+}
+
+
+h1 {
+  
 }
 
 h2 {
@@ -47,9 +75,4 @@ li {
   font-size: 1.2em;
   font-weight: normal;
   margin-bottom: 0em;
-}
-
-header a {
-  display: flex;
-  justify-content: flex-end;
 }
