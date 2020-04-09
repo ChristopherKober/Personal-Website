@@ -9,6 +9,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 20px;
 }
 
 .titleLinks {
@@ -42,7 +43,7 @@
 /*BODY STYLES*/
 body {
   background: rgb(241, 241, 241);;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lora', serif;
   margin: 0;
 }
 
