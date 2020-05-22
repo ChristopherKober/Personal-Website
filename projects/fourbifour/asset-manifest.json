@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/projects/fourbifour/static/css/main.8151b705.chunk.css",
-    "main.js": "/projects/fourbifour/static/js/main.67e05728.chunk.js",
-    "main.js.map": "/projects/fourbifour/static/js/main.67e05728.chunk.js.map",
+    "main.css": "/projects/fourbifour/static/css/main.a710133c.chunk.css",
+    "main.js": "/projects/fourbifour/static/js/main.f73101e0.chunk.js",
+    "main.js.map": "/projects/fourbifour/static/js/main.f73101e0.chunk.js.map",
     "runtime-main.js": "/projects/fourbifour/static/js/runtime-main.10627943.js",
     "runtime-main.js.map": "/projects/fourbifour/static/js/runtime-main.10627943.js.map",
     "static/js/2.1fab7f78.chunk.js": "/projects/fourbifour/static/js/2.1fab7f78.chunk.js",
     "static/js/2.1fab7f78.chunk.js.map": "/projects/fourbifour/static/js/2.1fab7f78.chunk.js.map",
     "index.html": "/projects/fourbifour/index.html",
-    "precache-manifest.df6a20e54e98b747dc210818613205c4.js": "/projects/fourbifour/precache-manifest.df6a20e54e98b747dc210818613205c4.js",
+    "precache-manifest.45883f6a6d6159a9990e2c4578cecd27.js": "/projects/fourbifour/precache-manifest.45883f6a6d6159a9990e2c4578cecd27.js",
     "service-worker.js": "/projects/fourbifour/service-worker.js",
-    "static/css/main.8151b705.chunk.css.map": "/projects/fourbifour/static/css/main.8151b705.chunk.css.map",
+    "static/css/main.a710133c.chunk.css.map": "/projects/fourbifour/static/css/main.a710133c.chunk.css.map",
     "static/js/2.1fab7f78.chunk.js.LICENSE.txt": "/projects/fourbifour/static/js/2.1fab7f78.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.10627943.js",
     "static/js/2.1fab7f78.chunk.js",
-    "static/css/main.8151b705.chunk.css",
-    "static/js/main.67e05728.chunk.js"
+    "static/css/main.a710133c.chunk.css",
+    "static/js/main.f73101e0.chunk.js"
   ]
 }
