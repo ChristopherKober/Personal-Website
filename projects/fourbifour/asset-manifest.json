@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/projects/fourbifour/static/css/main.8151b705.chunk.css",
+    "main.js": "/projects/fourbifour/static/js/main.1aa557f7.chunk.js",
+    "main.js.map": "/projects/fourbifour/static/js/main.1aa557f7.chunk.js.map",
+    "runtime-main.js": "/projects/fourbifour/static/js/runtime-main.10627943.js",
+    "runtime-main.js.map": "/projects/fourbifour/static/js/runtime-main.10627943.js.map",
+    "static/js/2.1fab7f78.chunk.js": "/projects/fourbifour/static/js/2.1fab7f78.chunk.js",
+    "static/js/2.1fab7f78.chunk.js.map": "/projects/fourbifour/static/js/2.1fab7f78.chunk.js.map",
+    "index.html": "/projects/fourbifour/index.html",
+    "precache-manifest.bf4678aeafb7c57345b3a2103f629264.js": "/projects/fourbifour/precache-manifest.bf4678aeafb7c57345b3a2103f629264.js",
+    "service-worker.js": "/projects/fourbifour/service-worker.js",
+    "static/css/main.8151b705.chunk.css.map": "/projects/fourbifour/static/css/main.8151b705.chunk.css.map",
+    "static/js/2.1fab7f78.chunk.js.LICENSE.txt": "/projects/fourbifour/static/js/2.1fab7f78.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10627943.js",
+    "static/js/2.1fab7f78.chunk.js",
+    "static/css/main.8151b705.chunk.css",
+    "static/js/main.1aa557f7.chunk.js"
+  ]
+}
