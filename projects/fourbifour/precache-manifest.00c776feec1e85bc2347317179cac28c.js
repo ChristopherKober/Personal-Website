@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd8a6da15d8d0d4d6b95d7fd60098142",
+    "revision": "60dc1329b710a6edbb5589012f51bb61",
     "url": "/projects/fourbifour/index.html"
   },
   {
-    "revision": "a18774a8a6ad66f42155",
-    "url": "/projects/fourbifour/static/css/main.a710133c.chunk.css"
+    "revision": "ee7cea04ecb14648724d",
+    "url": "/projects/fourbifour/static/css/main.cb59fc62.chunk.css"
   },
   {
     "revision": "87a44522bb729865ab3f",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/projects/fourbifour/static/js/2.1fab7f78.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a18774a8a6ad66f42155",
-    "url": "/projects/fourbifour/static/js/main.f73101e0.chunk.js"
+    "revision": "ee7cea04ecb14648724d",
+    "url": "/projects/fourbifour/static/js/main.a4b631c4.chunk.js"
   },
   {
     "revision": "c50a43bb2048b9477be0",
