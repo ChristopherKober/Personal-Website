@@ -1,10 +1,3 @@
-main {
-  margin: 0px 15%;
-  padding:30px;
-  background: white;
-  box-shadow: 0 0 2px 2px lightgrey;
-}
-
 #mainTitle {
   
   position: relative;
@@ -45,43 +38,160 @@ main {
   padding: 0 2em;
 }
 
-section>* {
-  width: 80%;
-  margin: auto;
-}
-
-section {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-.sectionContainer {
-  margin-left: 30px;
-  margin-right: 30px;
+main {
+  margin:0px;
+  width:100vw;
+  font-size: 18px;
 }
 
 h2 {
-  font-size: 3em;
-  font-weight: normal;
-  color: rgb(78, 42, 132);
-  margin-bottom: .5em;
-  border-bottom: 1px solid black;
+  font-size: 64px;
 }
 
-h3 {
-  font-size: 1em;
-  font-weight: 600;
-  /*margin-bottom: .4em;*/
+.infosection {
+  display:flex;
+  align-items: stretch;
+  width: 100vw;
+  min-height: 40vw;
 }
 
-p {
-  font-size: 1.3em;
-  font-weight: normal;
-  line-height: 1.3em;
-  /*margin-bottom: 1em;*/
+.leftinfo {
+  flex-direction: row-reverse;
 }
 
-li {
-  font-size: 1.2em;
-  font-weight: normal;
+.infotitle {
+  flex:1;
+  align-self: center;
+  text-align: center;
+}
+
+.infodetails {
+  flex:1;
+  background: white;
+  text-align: center;
+  display:flex;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#aboutme {
+  /* background: rgba(235, 216, 155, 0.7); */
+  background-color: rgba(235, 216, 179,0.7);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d8b879' fill-opacity='.50'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  position: relative;
+}
+
+#aboutme .infodetails p {
+  line-height: 30px;
+  text-align: left;
+}
+
+#aboutme h3 {
+  position: absolute;
+  left:calc(50% - 35px);
+  top:calc(50% - 18px);
+  z-index: 100;
+}
+
+#experience {
+  /* background: rgba(120, 136, 235, 0.7); */
+  background-color: rgba(120, 136, 235,0.7);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236376ea' fill-opacity='0.5'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.experiencecard {
+  margin:50px;
+}
+
+.experiencecard .experienceheader{
+  display: flex;
+  flex-direction: column;
+  /* align-self: center; */
+}
+
+.experiencecard .experienceheader .experiencetitle{
+  display: flex;
+  flex-direction: row;
+  /* align-items:center; */
+}
+
+.experiencecard .experienceheader img{
+  border-radius: 50%;
+  margin:10px;
+
+  border: 5px solid #000000;
+}
+
+.experiencecard .experienceheader #PayoneerLogo{
+  border-radius: 50%;
+  margin:10px;
+
+  border: 5px solid #ff675b;
+}
+
+.experiencecard .experienceheader #DeloitteLogo{
+  border-radius: 50%;
+  margin:10px;
+
+  border: 5px solid #86BC25;
+}
+
+.experiencecard .experienceheader h3{
+  font-size: 36px;
+}
+
+#education {
+  /* background: rgba(120, 136, 235, 0.7); */
+  background-color: rgba(230, 142, 235, 0.7);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23e76dee' fill-opacity='0.5'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.educationcard {
+  margin:50px;
+}
+
+.educationcard .educationheader{
+  display: flex;
+  flex-direction: column;
+  /* align-self: center; */
+}
+
+.educationcard .educationheader .educationtitle{
+  display: flex;
+  flex-direction: row;
+  /* align-items:center; */
+}
+
+.educationcard .educationheader img{
+  border-radius: 50%;
+  margin:10px;
+
+  border: 5px solid #000000;
+}
+
+.educationcard .educationheader #NorthwesternLogo{
+  border-radius: 50%;
+  margin:10px;
+
+  border: 5px solid #4f2e85;
+}
+
+.educationcard .educationheader #KelloggLogo{
+  border-radius: 50%;
+  margin:10px;
+
+  border: 5px solid #482672;
+}
+
+.educationcard .educationheader h3{
+  font-size: 36px;
+}
+
+
+#contact {
+  /* background: rgba(120, 136, 235, 0.7); */
+  background-color: rgba(123, 221, 53, 0.4);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236bbf2f' fill-opacity='0.5'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
