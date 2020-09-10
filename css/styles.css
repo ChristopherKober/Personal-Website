@@ -1,197 +1,66 @@
-#mainTitle {
-  
-  position: relative;
-  z-index: 11;
-  background: linear-gradient( rgba(112, 81, 116,.75), rgba(112, 81, 116,.75) ),url(../resources/images/background/arch-purple.jpg) no-repeat fixed top center;
-    
-  background-size:cover;
+body, html {
   height: 100%;
-  width: 100%;
-  height: 100vh;
-  width: 100vw;
-    
-  display: flex;
-  align-items:center;
-  justify-content: center;
 }
 
-#mainTitle h1 {
-  font-size: 5em;
-  font-weight: normal;
-  text-align: center;
-  margin: auto;
-  color: white;
-  padding-bottom: .25em;
+.navbar {
+    -webkit-box-shadow: 0 8px 6px -6px #999;
+    -moz-box-shadow: 0 8px 6px -6px #999;
+    box-shadow: 0 8px 6px -6px #999;
 
-  font-family: 'Lora', serif;
+    /* the rest of your styling */
 }
 
-#mainTitle p {
-  text-align: center;
-  color: white;
+.bg {
+  background: linear-gradient( rgba(112, 81, 116,.75), rgba(112, 81, 116,.75) ), url("../img/arch-purple.jpg");
+  background-size:cover;
+  background-attachment: fixed;
 }
 
-#mainTitle a {
-  border-top: 1px solid black;
-  color: white;
-  text-decoration: none;
-  padding: 0 2em;
+#chris-title {
+  font-family: 'Playfair Display';
+  color: rgb(78, 42, 132) !important;
+  font-size: 2rem;
 }
 
-main {
-  margin:0px;
-  width:100vw;
-  font-size: 18px;
+.resume-section {
+  /* border-left-color: var(--primary) !important;
+  border-left-width: 4px !important; */
+  /* padding-left: 10px !important;
+  border-left: 4px solid rgb(119, 109, 138) !important; */
+  border-width: 5px !important;
 }
 
-h2 {
-  font-size: 64px;
+.side-image {
+  width: 15% !important;
+  height: 15% !important;
+  min-width: 200px;
 }
 
-.infosection {
-  display:flex;
-  align-items: stretch;
-  width: 100vw;
-  min-height: 40vw;
+.img-small {
+  height: 4rem !important;
+  width: 4rem !important;
 }
 
-.leftinfo {
-  flex-direction: row-reverse;
+.large-icon {
+  height: 20rem;
+  width: 20rem;
 }
 
-.infotitle {
-  flex:1;
-  align-self: center;
-  text-align: center;
-}
-
-.infodetails {
-  flex:1;
-  background: white;
-  text-align: center;
-  display:flex;
-  align-content: center;
-  flex-direction: column;
+.social-icons .social-icon {
+  display: inline-flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #343a40;
+  color: #fff;
+  border-radius: 100%;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
 }
-
-#aboutme {
-  /* background: rgba(235, 216, 155, 0.7); */
-  background-color: rgba(235, 216, 179,0.7);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23d8b879' fill-opacity='.50'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  position: relative;
+.social-icons .social-icon:last-child {
+  margin-right: 0;
 }
-
-#aboutme .infodetails p {
-  line-height: 30px;
-  text-align: left;
-}
-
-#aboutme h3 {
-  position: absolute;
-  left:calc(50% - 35px);
-  top:calc(50% - 18px);
-  z-index: 100;
-}
-
-#experience {
-  /* background: rgba(120, 136, 235, 0.7); */
-  background-color: rgba(120, 136, 235,0.7);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236376ea' fill-opacity='0.5'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.experiencecard {
-  margin:50px;
-}
-
-.experiencecard .experienceheader{
-  display: flex;
-  flex-direction: column;
-  /* align-self: center; */
-}
-
-.experiencecard .experienceheader .experiencetitle{
-  display: flex;
-  flex-direction: row;
-  /* align-items:center; */
-}
-
-.experiencecard .experienceheader img{
-  border-radius: 50%;
-  margin:10px;
-
-  border: 5px solid #000000;
-}
-
-.experiencecard .experienceheader #PayoneerLogo{
-  border-radius: 50%;
-  margin:10px;
-
-  border: 5px solid #ff675b;
-}
-
-.experiencecard .experienceheader #DeloitteLogo{
-  border-radius: 50%;
-  margin:10px;
-
-  border: 5px solid #86BC25;
-}
-
-.experiencecard .experienceheader h3{
-  font-size: 36px;
-}
-
-#education {
-  /* background: rgba(120, 136, 235, 0.7); */
-  background-color: rgba(230, 142, 235, 0.7);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23e76dee' fill-opacity='0.5'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
-
-.educationcard {
-  margin:50px;
-}
-
-.educationcard .educationheader{
-  display: flex;
-  flex-direction: column;
-  /* align-self: center; */
-}
-
-.educationcard .educationheader .educationtitle{
-  display: flex;
-  flex-direction: row;
-  /* align-items:center; */
-}
-
-.educationcard .educationheader img{
-  border-radius: 50%;
-  margin:10px;
-
-  border: 5px solid #000000;
-}
-
-.educationcard .educationheader #NorthwesternLogo{
-  border-radius: 50%;
-  margin:10px;
-
-  border: 5px solid #4f2e85;
-}
-
-.educationcard .educationheader #KelloggLogo{
-  border-radius: 50%;
-  margin:10px;
-
-  border: 5px solid #482672;
-}
-
-.educationcard .educationheader h3{
-  font-size: 36px;
-}
-
-
-#contact {
-  /* background: rgba(120, 136, 235, 0.7); */
-  background-color: rgba(123, 221, 53, 0.4);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%236bbf2f' fill-opacity='0.5'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+.social-icons .social-icon:hover {
+  background-color: #776d8a ;
 }
