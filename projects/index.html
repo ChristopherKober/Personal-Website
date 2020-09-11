@@ -1,14 +1,108 @@
-<h1>Projects</h1>
-<div>
-    <a href='https://www.chriskober.com/projects/nyc/'>
-        <h2>NYC Exploration</h2>
-    </a>
-</div>
-<div>
-    <a href='https://www.chriskober.com/projects/fantasy-football/'>
-        <h2>Fantasy Football Predictions</h2>
-    </a>
-</div>
-<h1>External Attribution</h1>
-<div>Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Chris Kober - Projects</title>
+        <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:800i&amp;display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../css/custom.css" rel="stylesheet" />
+        <link href="../css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Nav Bar -->
+      <div class="container-fullwidth">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+            <a class="navbar-brand text-white" id="chris-title-white" href="https://www.chriskober.com">Chris Kober</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="#">Projects</a>
+              <a class="nav-item nav-link" href="#">Blog</a>
+              <a class="nav-item nav-link js-scroll-trigger" href="https://www.chriskober.com#about">About Me</a>
+              <a class="nav-item nav-link js-scroll-trigger" href="https://www.chriskober.com#contact">Contact</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h1 class="section-heading">Projects</h1>
+                    <h3 class="section-subheading text-muted">View projects by technology or categories</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-search fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/nyc-thumbnail.png" alt="" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">NYC Exploration Map</div>
+                                <div class="portfolio-caption-subheading text-muted">Interactive map log</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Modals-->
+        <!-- Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog mx-md-30p">
+                <div class="modal-content">
+                    <div class="close-modal" data-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project Details Go Here-->
+                                    <h2 class="text-uppercase">NYC Exploration Map</h2>
+                                    <p class="item-intro text-muted">Interactive mapping logging visits by neighborhood</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/nyc-thumbnail.png" alt="" />
+                                    <p>This project uses an angular front-end to display all of the neighborhoods in Manhattan, along with timeline
+                                        data for each neighborhood. This project follows the travels of an NYC native over the course of time.
+                                        The front end is powered by a node JS Rest Api and saves its data in a PostgreSQL database.
+                                    </p>
+                                    <ul class="list-inline">
+                                        <li>AngularJS</li>
+                                        <li>NodeJS</li>
+                                        <li>PostgreSQL</li>
+                                    </ul>
+                                    <button class="btn btn-primary" onclick="window.location.href='https://www.chriskober.com/projects/nyc'" type="button">
+                                        Open Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

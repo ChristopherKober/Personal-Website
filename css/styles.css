@@ -16,6 +16,12 @@ body, html {
   background-attachment: fixed;
 }
 
+#chris-title-white {
+  font-family: 'Playfair Display';
+  color: #f8f9fa !important;
+  font-size: 2rem;
+}
+
 #chris-title {
   font-family: 'Playfair Display';
   color: rgb(78, 42, 132) !important;
@@ -63,4 +69,13 @@ body, html {
 }
 .social-icons .social-icon:hover {
   background-color: #776d8a ;
+}
+
+
+
+@media (min-width: 991.98px) { 
+  .mx-md-30p {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
 }
