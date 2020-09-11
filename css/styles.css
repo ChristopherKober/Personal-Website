@@ -79,3 +79,9 @@ body, html {
     margin-right: 15% !important;
   }
 }
+
+@media (max-width: 720px) {
+  .display-1 {
+    font-size: 4rem !important;
+  }
+}
