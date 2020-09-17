@@ -43,8 +43,8 @@ body, html {
 }
 
 .img-small {
-  height: 4rem !important;
-  width: 4rem !important;
+  height: 8rem !important;
+  width: 8rem !important;
 }
 
 .large-icon {
@@ -71,8 +71,6 @@ body, html {
   background-color: #776d8a ;
 }
 
-
-
 @media (min-width: 991.98px) { 
   .mx-md-30p {
     margin-left: 15% !important;
@@ -84,4 +82,17 @@ body, html {
   .display-1 {
     font-size: 4rem !important;
   }
+}
+@media (min-width: 720px) {
+  .d-flex-md {
+    display: flex;
+  }
+}
+
+.max-ch-lg {
+  max-width: 70ch;
+}
+
+.bg-offwhite {
+  background: #faf9f9 !important;
 }
