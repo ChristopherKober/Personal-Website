@@ -1,0 +1,12 @@
+.box-shadow-display-card {
+    /* width: 20vw;
+    height: 20vw; */
+    min-width: 9em;
+    min-height: 9em;
+    margin: 2em;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
