@@ -1,45 +1,648 @@
-.demo:empty {
-    margin: auto;
-		width: 500px;
-		height: 600px;
-    
-		background-image:
-			radial-gradient( circle 50px at 50px 50px, lightgray 99%, transparent 0 ),
-			linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
-			linear-gradient( lightgray 20px, transparent 0 ),
-			linear-gradient( lightgray 20px, transparent 0 ),
-			linear-gradient( lightgray 20px, transparent 0 ),
-			linear-gradient( lightgray 20px, transparent 0 );
+.skeleton-shapes {
 
-		background-repeat: repeat-y;
+    font-size: 1.4vw;
 
-		background-size:
-			100px 200px,
-			50px 200px,
-			150px 200px,
-			350px 200px,
-			300px 200px,
-			250px 200px;
+    margin: 2rem 0;
+    width: calc(60ch + 7em);
+    height: 10.5em;
 
-		background-position:
-			0 0,
-			0 0,
-			120px 0,
-			120px 40px,
-			120px 80px,
-			120px 120px;
+    background-image:
+        radial-gradient( circle 3em at 3em 3em, lightgray 99%, transparent 0 ),
+        linear-gradient( lightgray 100%, transparent 0 ),
+        linear-gradient( lightgray 100%, transparent 0 ),
+        linear-gradient( lightgray 100%, transparent 0 ),
+        linear-gradient( lightgray 100%, transparent 0 ); 
 
-		animation: shine 1s infinite;
-	}
 
-	@keyframes shine {
-		to {
-			background-position:
-				0 0,
-				100% 0,
-				120px 0,
-				120px 40px,
-				120px 80px,
-				120px 120px;
-		}
-	}
+    background-size:
+        6em 6em,
+        30ch 1.5em,
+        60ch 1em,
+        60ch 1em,
+        calc(60ch + 5em) 3em;
+
+    background-position:
+        0 0,
+        7em 0,
+        7em 2.5em,
+        7em 4em,
+        2em 7.5em ;
+
+    background-repeat: no-repeat;
+}
+
+:root {
+    /* 
+        RGB values for the background of the skeleton loader.
+        Need to keep in comma format to apply alpha values later.
+    */
+    --background-color: 255, 255, 255;
+}
+
+.loader1 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader1::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        200px 100%;
+
+    background-position:
+        -200px 0;
+
+    background-repeat: no-repeat;
+    animation: animation1 1s infinite;
+}
+
+@keyframes animation1 {
+    to {
+        background-position:
+            calc(100% + 200px) 0;
+    }
+}    
+
+.loader2 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader2::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        200px 100%;
+
+    background-position:
+        -200px 0;
+
+    background-repeat: no-repeat;
+    animation: animation2 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation2 {
+    to {
+        background-position:
+            calc(100% + 200px) 0;
+    }
+}
+
+.loader3 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader3::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        200px 100%;
+
+    background-position:
+    calc(100% + 200px) 0;
+
+    background-repeat: no-repeat;
+    animation: animation3 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation3 {
+    to {
+        background-position:
+        -200px 0;
+    }
+}
+
+.loader4 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader4::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 25%, 
+            rgba(var(--background-color),0) 50%,
+            rgba(var(--background-color),0.8) 75%,
+            rgba(var(--background-color),0) 100%); 
+
+    background-size:
+        1000px 100%;
+
+    background-position:
+        -1000px 0;
+
+    background-repeat: no-repeat;
+    animation: animation4 2s infinite;
+}
+
+@keyframes animation4 {
+    to {
+        background-position:
+            calc(100% + 1000px) 0;
+    }
+}
+
+.loader5 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader5::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        100px 100%;
+
+    background-position:
+        -100px 0;
+
+    background-repeat: no-repeat;
+    animation: animation1 1s infinite;
+}
+
+@keyframes animation5 {
+    to {
+        background-position:
+            calc(100% + 100px) 0;
+    }
+}    
+
+.loader6 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader6::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        100px 100%;
+
+    background-position:
+        -100px 0;
+
+    background-repeat: no-repeat;
+    animation: animation6 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation6 {
+    to {
+        background-position:
+            calc(100% + 100px) 0;
+    }
+}
+
+.loader7 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader7::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        100px 100%;
+
+    background-position:
+    calc(100% + 100px) 0;
+
+    background-repeat: no-repeat;
+    animation: animation7 1s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation7 {
+    to {
+        background-position:
+        -100px 0;
+    }
+}
+
+.loader8 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader8::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 25%, 
+            rgba(var(--background-color),0) 50%,
+            rgba(var(--background-color),0.8) 75%,
+            rgba(var(--background-color),0) 100%); 
+
+    background-size:
+        500px 100%;
+
+    background-position:
+        -500px 0;
+
+    background-repeat: no-repeat;
+    animation: animation8 2s infinite;
+}
+
+@keyframes animation8 {
+    to {
+        background-position:
+            calc(100% + 500px) 0;
+    }
+}
+
+.loader9 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader9::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        200px 100%;
+
+    background-position:
+        -200px 0;
+
+    background-repeat: no-repeat;
+    animation: animation9 3s infinite;
+}
+
+@keyframes animation9 {
+    to {
+        background-position:
+            calc(100% + 200px) 0;
+    }
+}    
+
+.loader10 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader10::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        200px 100%;
+
+    background-position:
+        -200px 0;
+
+    background-repeat: no-repeat;
+    animation: animation10 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation10 {
+    to {
+        background-position:
+            calc(100% + 200px) 0;
+    }
+}
+
+.loader11 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader11::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        200px 100%;
+
+    background-position:
+    calc(100% + 200px) 0;
+
+    background-repeat: no-repeat;
+    animation: animation11 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation11 {
+    to {
+        background-position:
+        -200px 0;
+    }
+}
+
+.loader12 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader12::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 25%, 
+            rgba(var(--background-color),0) 50%,
+            rgba(var(--background-color),0.8) 75%,
+            rgba(var(--background-color),0) 100%); 
+
+    background-size:
+        1000px 100%;
+
+    background-position:
+        -1000px 0;
+
+    background-repeat: no-repeat;
+    animation: animation12 4s infinite;
+}
+
+@keyframes animation12 {
+    to {
+        background-position:
+            calc(100% + 1000px) 0;
+    }
+}
+
+.loader13 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader13::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        100px 100%;
+
+    background-position:
+        -100px 0;
+
+    background-repeat: no-repeat;
+    animation: animation13 3s infinite;
+}
+
+@keyframes animation13 {
+    to {
+        background-position:
+            calc(100% + 100px) 0;
+    }
+}    
+
+.loader14 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader14::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        100px 100%;
+
+    background-position:
+        -100px 0;
+
+    background-repeat: no-repeat;
+    animation: animation14 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation14 {
+    to {
+        background-position:
+            calc(100% + 100px) 0;
+    }
+}
+
+.loader15 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader15::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 50%, 
+            rgba(var(--background-color),0) 100% ); 
+
+    background-size:
+        100px 100%;
+
+    background-position:
+    calc(100% + 100px) 0;
+
+    background-repeat: no-repeat;
+    animation: animation15 3s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animation15 {
+    to {
+        background-position:
+        -100px 0;
+    }
+}
+
+.loader16 {
+    overflow: hidden;
+    position: relative;
+}
+
+.loader16::before {
+    content: "";
+    position: absolute;    
+    display: inline-block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-image:
+        linear-gradient( to left, 
+            rgba(var(--background-color),0), 
+            rgba(var(--background-color),0.8) 25%, 
+            rgba(var(--background-color),0) 50%,
+            rgba(var(--background-color),0.8) 75%,
+            rgba(var(--background-color),0) 100%); 
+
+    background-size:
+        500px 100%;
+
+    background-position:
+        -500px 0;
+
+    background-repeat: no-repeat;
+    animation: animation16 4s infinite;
+}
+
+@keyframes animation16 {
+    to {
+        background-position:
+            calc(100% + 500px) 0;
+    }
+}
